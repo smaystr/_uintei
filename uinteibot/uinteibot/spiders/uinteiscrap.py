@@ -50,6 +50,7 @@ class UinteiscrapSpider(scrapy.Spider):
         # review_content = re.sub(r'\W', ' ', review_content)
         # review_content = re.sub(r'(?=[\W])[^\.\:\;\!\?\=\?\+\-]', ' ', review_content)
         # review_content = re.sub(r'(?=[\W])[^\.\,\:\-\!\?]', ' ', review_content)
+
         # review_content = re.sub(r'^[?-?A-Z]', ' ', review_content)
 
         review_content = re.sub(r'(?:&).[\w\-_]{1,9}?(?:;)', '', review_content)  # &..;
